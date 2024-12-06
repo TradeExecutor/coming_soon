@@ -26,18 +26,6 @@
       background: #161b22;
       border-radius: 15px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      position: relative;
-    }
-
-    /* Logo in top-left corner */
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-    }
-
-    .logo img {
-      height: 250px; /* Adjust for desired logo size */
     }
 
     /* Graph illustration */
@@ -48,6 +36,15 @@
       border-radius: 10px;
       position: relative;
       overflow: hidden;
+    }
+
+    /* Logo positioned in the middle of the graph */
+    .graph img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100px; /* Adjust size as needed */
     }
 
     .graph::after {
@@ -110,13 +107,10 @@
 </head>
 <body>
   <div class="container">
-    <!-- Logo -->
-    <div class="logo">
+    <!-- Graph illustration -->
+    <div class="graph">
       <img src="Trade Executor (1).png" alt="Trade Executor Logo">
     </div>
-
-    <!-- Graph illustration -->
-    <div class="graph"></div>
 
     <!-- Text Section -->
     <p class="details">
