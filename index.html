@@ -26,29 +26,23 @@
       background: #161b22;
       border-radius: 15px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      position: relative;
     }
 
-    /* Header section styling */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
+    /* Logo in top-left corner */
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
     }
 
-    .header img {
-      height: 50px;
-    }
-
-    .header h1 {
-      font-size: 2rem;
-      color: #58a6ff; /* Bright trading-style blue */
-      margin: 0;
+    .logo img {
+      height: 80px; /* Adjust for desired logo size */
     }
 
     /* Graph illustration */
     .graph {
-      margin: 30px 0;
+      margin: 50px 0;
       background: linear-gradient(135deg, #58a6ff, #0ea25f); /* Trading graph color theme */
       height: 200px;
       border-radius: 10px;
@@ -116,10 +110,9 @@
 </head>
 <body>
   <div class="container">
-    <!-- Header -->
-    <div class="header">
+    <!-- Logo -->
+    <div class="logo">
       <img src="Trade Executor (1).png" alt="Trade Executor Logo">
-      <h1>Trade Executor</h1>
     </div>
 
     <!-- Graph illustration -->
